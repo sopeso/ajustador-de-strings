@@ -1,0 +1,1 @@
+# ajustador-de-strings
