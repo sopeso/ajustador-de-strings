@@ -21,6 +21,7 @@ import unicodedata
 #nome_aba = 'bd'
 #colunas_analise = Q8;Q9
 #percentual_similaridade_minimo = 80
+#CAMINHO ALVOS C:\Users\OPB\Desktop\Python\Alvos.xlsx
 #aba_alvo = 'Delivery_Bebidas'
 
 #CRM
