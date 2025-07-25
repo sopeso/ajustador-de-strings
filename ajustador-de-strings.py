@@ -19,28 +19,25 @@ import unicodedata
 #Zé delivery
 #caminho_planilha = 'C:/Users/OPB/Desktop/Python/Ze_delivery/bd_ze_delivery_Jun25.xlsx'
 #nome_aba = 'bd'
-#colunas_analise = ['Q8', 'Q9']  
+#colunas_analise = Q8;Q9
 #percentual_similaridade_minimo = 80
 #aba_alvo = 'Delivery_Bebidas'
 
 #CRM
 #caminho_planilha = 'C:/Users/OPB/Desktop/Python/Grupo CRM/bd_consolidado 18jul.xlsx'
 #nome_aba = 'bd'
-#colunas_analise = ['Q5', 'Q6_1_TEXT','Q6_2_TEXT', 'Q6_3_TEXT','Q6_4_TEXT','Q6_5_TEXT','Q58']  
+#colunas_analise = Q5;Q6_1_TEXT;Q6_2_TEXT;Q6_3_TEXT;Q6_4_TEXT;Q6_5_TEXT;Q58  
 #percentual_similaridade_minimo = 80
 #aba_alvo = 'Loja_chocolate'
 
 #Mobile Time- Uso de apps
 #caminho_planilha = 'C:/Users/OPB/Desktop/Python/Mobile Time/bd_consistencia_Uso de apps.xlsx'
 #ome_aba = 'bd'
-#colunas_analise = ['Q7_1', 'Q7_2', 'Q7_3','Q7_4','Q7_5', 'Q7_6', 'Q7_7',
-#                   'Q7_8','Q7_9','Q7_10','Q7_11','Q7_12','Q7_13','Q7_14',
-#                  'Q7_15','Q7_16','Q7_17','Q7_18','Q7_19','Q7_20','Q7_1',
-#                   'Q8','Q9', 'Q10','Q12','Q25','Q27','Q32','Q34','Q36','Q37',
-#                  'Q39','Q41','Q44','Q55']  
-
+#colunas_analise = Q7_1;Q7_2;Q7_3;Q7_4;Q7_5;Q7_6;Q7_7;Q7_8;Q7_9;Q7_10;Q7_11;Q7_12;Q7_13;Q7_14;Q7_15;Q7_16;Q7_17;Q7_18;Q7_19;Q7_20;Q7_1;Q8;Q9;Q10;Q12;Q25;Q27;Q32;Q34;Q36;Q37;Q39;Q41;Q44;Q55
 #percentual_similaridade_minimo = 80
 #aba_alvo = 'Apps' 
+
+#CAMINHO ALVOS C:\Users\OPB\Desktop\Python\Alvos.xlsx
 
 caminho_planilha = input("Insira o caminho da planilha a ser processada: ")
 nome_aba = input("Insira a aba da planilha a ser processada: ")
@@ -193,6 +190,7 @@ bd.to_excel(caminho_saida, index=False)
 # Aplica destaque com openpyxl
 wb = load_workbook(caminho_saida)
 ws = wb.active
+
 
 for coluna in colunas_analise:
     nova_coluna = resultados_correcao[coluna]
